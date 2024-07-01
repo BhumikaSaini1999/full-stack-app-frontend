@@ -12,7 +12,7 @@ Step 4 - build application using below cmd
       
 Step 5 - publish your build changes from your local folder to github pages with below cmd
 
-   npx angular-cli-ghpages --dir=dist/angular-ecommerce/browser
+      npx angular-cli-ghpages --dir=dist/angular-ecommerce/browser
    
 Step 6 -  go to repo setting and select gh-pages branch and save
 
