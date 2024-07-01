@@ -1,5 +1,5 @@
 # Stage 1: Build the Angular application
-FROM node:14-alpine AS build
+FROM node:20.14.0 AS build
 
 # Set working directory
 WORKDIR /app
@@ -26,7 +26,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the Angular build output to the Nginx HTML directory
-COPY --from=build /app/dist/your-angular-app /usr/share/nginx/html
+COPY --from=build /app/dist/angular-ecommerce /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
