@@ -1,11 +1,19 @@
-##Steps to deploy frontend angular app on github pages
+## Steps to deploy frontend angular app on github pages
+
 Step 1 - ng add angular-cli-ghpages
+
 Step 2 - push Code to githubRepo
+
 Step 3 - go to repo setting and select main branch and save
+
 Step 4 - build application using below cmd
+
       ng build --base-href "https://bhumikasaini1999.github.io/full-stack-app-frontend/"
+      
 Step 5 - publish your build changes from your local folder to github pages with below cmd
+
    npx angular-cli-ghpages --dir=dist/angular-ecommerce/browser
+   
 Step 6 -  go to repo setting and select gh-pages branch and save
 
 
