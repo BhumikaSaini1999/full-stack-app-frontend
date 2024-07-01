@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/angular-ecommerce",
-			"baseHref": "/full-stack-app-frontend/",
+			      "baseHref": "/full-stack-app-frontend/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

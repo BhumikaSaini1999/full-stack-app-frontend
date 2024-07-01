@@ -56,6 +56,8 @@ export class LoginStatusComponent implements OnInit{
 
   logout(){
     //Terminate the session with Okta and remove current tokens.
-    this.oktaAuth.signOut();
+    this.oktaAuth.signOut({
+      postLogoutRedirectUri: 'https://bhumikasaini1999.github.io/full-stack-app-frontend/'
+    });
   }
 }
